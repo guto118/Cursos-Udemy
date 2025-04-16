@@ -1,0 +1,34 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+legend {
+    font-weight: bold;/*negrito*/
+
+}
+label {
+    display: block;
+    cursor: pointer;/*o cursos em cima do label vira uma mão como se  podesse clicar nele como é o caso*/
+}
+/*input[type="text"] {
+    width: 20em;
+}*/
+input {
+    width: 20em;
+}
+text-area {
+    width: 20em;
+    height: 10em;
+}
+input.radio, input.checkbox, input.submit {
+    width: auto;
+}
+.radio {
+    margin-right: 1em;
+}
+

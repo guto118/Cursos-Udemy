@@ -1,0 +1,24 @@
+/*Seletores universais*/
+* {
+    border: 1px solid red;
+}
+p.verde {
+    color: green;
+}
+li>a {/*modifica o elemento filho direto*/
+    color: red;
+    text-decoration: none;
+}
+div a {/*seletor descendente*/
+    color: white;
+    background: blue;
+    text-decoration: none;
+}
+h1+p {/*Seletor irmão adjacente, primeiro elemento depois de qualquer elemento*/
+    color: red;
+
+}
+h1~p {/*seletor irmão geral, se houvesse dois elementos que fossem irmãos de um elemento essa regra se aplicará aos dois*/
+    color: pink;
+
+}

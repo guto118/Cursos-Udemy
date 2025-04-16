@@ -1,0 +1,28 @@
+/*body {
+    color: red;
+    border: 1px solid blue;
+}
+border e background não  são herdados*/
+
+.pagina p {
+    color: blue !important;
+    /*diz que ele é mais importante que qualquer outro*/
+}
+.pagina p {
+    color: red;
+}/*quando se tem dois seletores iguais o  ultimo que vai ser exibido*/
+
+/*Se um seletor for mais específicoque o outro a regra mais específica será aplicada*/
+* {
+    color: red;
+}
+h2 {/*3*/
+    color: blueviolet;
+}
+h2#amarelo {/*1*/
+    color: yellow;
+}/*O id é mais específico que a classe*/
+h2.green {/*2*/
+    color: green;
+}
+

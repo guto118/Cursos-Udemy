@@ -1,0 +1,49 @@
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+li {
+    padding:5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}
+a {
+    text-decoration: none;
+}*/
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul a {
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(255, 0, 0);
+    display: block;
+    color: #000;
+    text-indent: 40px;/*coloca o texto para o lado*/
+    line-height: 40px;
+    text-decoration: none;
+    background: #f7b600 url(../imagens/menu.png);
+}
+
+a:hover/*, .selecionado a8?*/  {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+#home #navegacao .home a,
+ #sobre #navegacao .sobre a,
+ #servicos #navegacao .servicos a,
+ #noticias #navegacao .noticias a,
+ #contato #navegacao .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+
+

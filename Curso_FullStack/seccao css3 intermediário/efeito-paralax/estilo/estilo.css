@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+.conteudo {
+    color: #777;
+    background: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+p {
+    margin-bottom: 20px;
+}
+
+/*Efeito Paralax*/
+
+.caixa1 {
+    background: url(../imagem/imagem1.jpg);
+}
+.caixa2 {
+    background: url(../imagem/imagem2.jpg);
+}
+.caixa3 {
+    background: url(../imagem/imagem3.jpg);
+}
+.caixa4 {
+    background: url(../imagem/imagem4.jpg);
+}
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    /*perto do zero não aparece e perto do 1 fica normal*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*cobre toda a largura da tela independente do tamanho*/
+    background-position: center;
+    /*centraliza a imagem*/
+    background-attachment: fixed;
+
+    /*a imagem fica fixa*/
+}
+
+.conteudo-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.conteudo-titulo span.titulo {
+    color: #fff;
+    background: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;/*espaçamento entre os textos*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
