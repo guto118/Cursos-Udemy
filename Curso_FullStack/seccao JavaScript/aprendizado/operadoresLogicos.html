@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+
+    <script>
+
+        /*
+        E - &&
+        OU - ||
+        NÃO - !
+        */
+        /*
+        if(2 == 2 && 3 >= 1) {
+            document.write('verdadeiro')
+        }
+        */
+
+        var nota = prompt('Digite a nota do aluno: ')
+        var faltas = prompt('Digite a quantidade de faltas: ')
+
+        var media = 7
+        var faltas_max = 15
+
+        /*
+        if (resultado) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
+        */
+
+        //operador ternário, embora seja limitado ele é bem eficiente como para essa aplicação
+        var resultado = ( nota >= media && faltas <= faltas_max ) ? 'aprovado' : 'reprovado'
+
+        document.write('resultado')
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
