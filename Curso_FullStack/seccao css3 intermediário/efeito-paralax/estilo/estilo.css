@@ -22,16 +22,16 @@ p {
 /*Efeito Paralax*/
 
 .caixa1 {
-    background: url(../imagem/imagem1.jpg);
+    background: url(../img/imagem1.jpg);
 }
 .caixa2 {
-    background: url(../imagem/imagem2.jpg);
+    background: url(../img/imagem2.jpg);
 }
 .caixa3 {
-    background: url(../imagem/imagem3.jpg);
+    background: url(../img/imagem3.jpg);
 }
 .caixa4 {
-    background: url(../imagem/imagem4.jpg);
+    background: url(../img/imagem4.jpg);
 }
 .caixa1, .caixa2, .caixa3, .caixa4 {
     position: relative;
