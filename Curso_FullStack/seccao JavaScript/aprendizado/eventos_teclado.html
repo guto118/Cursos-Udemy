@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do Teclado</title>
+    <style>
+        input {
+            display: block;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        // onkeydown - quando eu aperto
+        //onkeypress - quando eu preciono - só funciona com caracteres
+        //onkeyup - quando eu solto
+
+        function acao1() {
+            alert(' evento onkeydown disparado! ')
+        }
+
+        function acao2() {
+            alert(' evento onkeyup disparado! ')
+        }
+
+        function acao3() {
+            alert(' evento onkeypress disparado! ')
+        }
+
+
+    </script>
+</head>
+<body>
+     <input onkeydown="acao1()" type="text">
+
+     <input onkeyup="acao2()" type="text">
+
+     <input onkeypress="acao3()" type="text">
+</body>
+</html>
