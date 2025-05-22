@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javaScript</title>
+    <script>
+
+    //função exibirArtigo só é executada quando chamada
+      function exibirArtigo(id, callbackSucesso, callbackErro) {
+        //lógica : reciperar o id via requisição http
+
+        if (true) {
+          callbackSucesso(
+            "Funções de callback em JS",
+            "Funções de callback são muito utilizadas"
+          );
+        } else {
+          callbackErro("Erro ao recuperar os dados");
+        }
+      }
+
+      //adiciona uma variável comuma função para diminuir na chamada
+      var callbackSucesso = function (titulo, descricao) {
+        document.write("<h1>" + titulo + "</h1>");
+        document.write("<hr>");
+        document.write("<p>" + descricao + "</p>");
+      };
+
+      //adiciona uma variável comuma função para diminuir na chamada
+      var callbackErro = function (erro) {
+        document.write("<p><b>Erro:</b> " + erro + "</p>");
+      };
+
+
+      //chamada para a função exibirArtigo e terceiro código executado
+      exibirArtigo(1, callbackSucesso, callbackErro);
+
+
+
+      //O código funciona assim ele cria as variáveis e depois vem a chamada da função exibirArtigo, depois tem um if com uma entrada para o verdadeiro que chama a função callbackSucesso e se falso a callbackErro dando os valores de título, descrição e erro das respectivas funções com isso escrevendo na tela 
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

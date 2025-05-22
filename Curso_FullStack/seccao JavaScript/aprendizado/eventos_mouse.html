@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <style>
+        div {
+            background: #ccc;
+            height: 150px;
+            width: 150px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function acao(){
+            alert('Evento disparado ao clicar')
+        }
+         function acao2(){
+            alert('Evento disparado ao clicar duas vezes')
+        }
+        function acao3(){
+            alert('Evento disparado ao clicar e soltar')
+        }
+        function acao4(){
+            alert('Evento disparado ao passar o cursor ')
+        }
+        function acao5(){
+            alert('Evento disparado ao tirar o cursor')
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <!--eventos do mouse
+    onclick
+    ondblclick
+    onmuseup
+    onmouseover
+    onmouseout-->
+    <div onclick="acao()" >Ao clicar</div>
+
+    <div ondblclick="acao2()" >Dois clicks</div>
+
+    <div onmouseup="acao3()" >Depois de clicar e soltar</div>
+
+    <div onmouseover="acao4()" >Quando passar o mouse</div>
+
+    <div onmouseout="acao5()" >Quando tirar o mouse</div>
+
+    <div onclick="acao()"  onmouseout="acao5()" >Ao clicar uma ou tirar o cursos</div>
+    
+</body>
+</html>
