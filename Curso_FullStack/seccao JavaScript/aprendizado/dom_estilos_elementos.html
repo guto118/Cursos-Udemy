@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM - Manipulando elementos de elementos </title>
+    <style>
+        div#color {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        
+        function modificaEstilo(cordeFundo, l, a){
+            
+            document.getElementById('color').style.backgroundColor = cordeFundo;
+            document.getElementById('color').style.width = l ;
+            document.getElementById('color').style.height = a ;
+
+
+        }
+
+        
+
+    </script>
+</head>
+<body>
+
+    <h3>Manipulando Elementos</h3>
+
+    <button onclick="modificaEstilo('#F00', '200px')">Vermelho</button>
+    <button onclick="modificaEstilo('#0F0', '150px', '20px')">Verde</button>
+    <button onclick="modificaEstilo('#00F', '150px', '200px')">Azul</button>
+
+    <hr>
+
+    <div id="color">
+
+    </div>
+    
+</body>
+</html>
