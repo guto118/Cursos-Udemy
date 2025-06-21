@@ -41,3 +41,4 @@ lista_frutas[4] = 'Uva' ;
 
 
 console.log(lista_frutas);
+document.writeln(lista_frutas.length)
